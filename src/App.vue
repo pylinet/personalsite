@@ -1,19 +1,14 @@
 <script setup>
-import WebsiteContent from './assets/WebsiteContent.vue'
+import LandingPage from './assets/LandingPage.vue'
 
 </script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div>
-      <p>Hello</p>
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <div class="layout">
+<LandingPage></LandingPage>
+</div>
 </template>
 
+<style>
+  @import "./assets/base.css";
+  </style>
+  

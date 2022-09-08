@@ -1,74 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto+Flex:opsz,wght@8..144,600&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;1,8..144,500&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+/* Global Configuration
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+    /* Typography */
+    --serif-font-family: "Lora", "Garamond", serif;
+    --sans-serif-font-family: "Roboto Flex", "Helvetica", sans-serif;
+  
+    /* Colors */
+    --c-med-gray: #E4E3E3;
+    --c-white: #FFFFFF;
+    --c-black: #000000;
+  }
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
-
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
-
+  /* Light mode color scheme */
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
+    --color-background: var(--c-white);
+    --color-text: var(--c-black);
   }
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
-}
 
-body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition: color 0.5s, background-color 0.5s;
-  line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  * {
+    font-family: var(--sans-serif-font-family);
+    font-size: 20px;
+    line-height: 150%;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    text-rendering: optimizeLegibility;
+
+  }
+
+  /* Structure */
+
+  .layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 75px;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .container-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-image {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+  }
+  
+
+  /* Navigation Bar */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    margin-bottom:147px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    width: 344px;
+    justify-content: space-between;
+
+  }
+
+  .nav-item a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .nav-item:hover a {
+    text-decoration:underline;
+  }
+
+  .navbar-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Typography */
+
+  h1 {
+    font-family: var(--serif-font-family);
+    font-weight: 600;
+    font-size: 64px;
+    overflow-wrap: anywhere;
+    margin: 0px;
+  }
+  
+  h2 {
+    font-family: var(--serif-font-family);
+    font-weight: 600;
+    font-size: 40px;
+    overflow-wrap: anywhere;
+    margin: 0px;
+  }
+  
+  .text-body-large {
+    font-family: var(--sans-serif-font-family);
+    font-size: 32px;
+    overflow-wrap: anywhere;
+    margin: 0px;
+  }
+  
+  strong {
+    font-weight: 700;
+    margin: 0px;
+  }
+  
+  .text-body {
+    font-family: var(--sans-serif-font-family);
+    line-height: 150%;
+    margin: 0px;
+  }
+  
+  .footer-text{
+    background-color:var(--c-deep-green);
+    color: var(--c-off-white);
+    margin: 0px;
+  }
