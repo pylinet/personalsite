@@ -10,7 +10,7 @@
 </ul>
 </nav>
 
-<div class="container">
+<div class="container" style="margin-bottom:150px">
     <div class="container-item">
         <h1>Hi, I'm Pyline!</h1>
         <p class="text-body-large">I’m an architect, design ops leader, <br>and amateur coder.</p>
@@ -24,7 +24,36 @@
     <div class="container-item">
         <img src="Andreas.jpg">
     </div>
+
 </div>
+
+<div class="container-text" style="margin-bottom:150px">
+<div class="container-link">
+    <div class="container-link-item">
+    <a href="#" class="button">Learn<br>More</a>
+    </div>
+    <div class="container-link-item">
+<img src="northeastarrow.svg" height="30">
+    </div>
+</div></div>
+
+
+<div class="container">
+    <div class="container-item">
+        <img src="Andreas.jpg">
+    </div>
+
+</div>
+
+<div class="container-text" >
+<div class="container-link">
+    <div class="container-link-item">
+    <a href="#" class="button">Learn<br>More</a>
+    </div>
+    <div class="container-link-item">
+<img src="northeastarrow.svg" height="30">
+    </div>
+</div></div>
 
 
 </template>
