@@ -1,0 +1,38 @@
+
+/* Media queries */
+
+/* Preserves some padding on left & right as a desktop or tablet browser shrinks.
+If you turn this query off, you'll see that there are no left or right margins remaining as the page reduces. */
+
+@media screen and (min-width: 800px) {
+    .layout, .container-footer {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  
+  }
+  
+/* For mobile or small tablets. */
+
+  @media screen and (max-width: 800px) {
+    .layout, .container-footer {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    
+    .container {
+      flex-direction: column;
+      margin-top: 80px;
+      gap: 50px;
+    }
+
+    .container h1, .container .text-body-large, .container-footer {
+      text-align: center;
+    }
+  
+    .container-social, .container-footer {
+      justify-content: center;
+    }
+ 
+  }
+  
