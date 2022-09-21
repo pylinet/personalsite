@@ -1,16 +1,16 @@
 <script setup>
-import LandingPage from './pages/LandingPage.vue'
+import LandingPage from './views/LandingPage.vue'
 import FooterComponent from './components/FooterComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 </script>
 
 <template>
     <div class="layout">
-      <HeaderComponent></HeaderComponent>
-      <LandingPage></LandingPage>
+      <HeaderComponent/>
+      <LandingPage/>
   </div>
 
-  <FooterComponent></FooterComponent>
+  <FooterComponent/>
 
 </template>
 <style>

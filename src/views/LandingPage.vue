@@ -1,23 +1,37 @@
 <script setup>
 import SocialComponents from '../components/SocialComponents.vue';
 
+import { ref } from 'vue'
+
+const greeting = "Hi, I'm Pyline!"
+
+const intro = "I’m an architect, design ops leader, and amateur coder. Let's collaborate!"
+
+const slides = ref([{link:"/src/assets/images/square.png"},{link:"/src/assets/images/square.png"}])
+
 </script>
 
 <template>
+
+
+<div class="container">
+  <div v-for="slide in slides">
+  <img :src="slide.link"/>
+</div>
+
+</div>
+
   <div class="container">
     <div class="container-item">
-      <img src="portrait.svg" alt="Self-portrait illustration by Pyline."/>
+      <img src="@/assets/images/portrait.svg" alt="Self-portrait illustration by Pyline."/>
     </div>
     <div class="container-item">
-      <h1>Hi, I'm Pyline!</h1>
+      <h1>{{ greeting }}</h1>
       <p class="text-body-large">
-        I’m an architect, design ops leader, <br />and amateur coder.<br /><br />Let's
-        collaborate!
+        {{intro}}
       </p>
-      <br /><br /><br /><br />
-      <SocialComponents></SocialComponents>
-    </div>
-  </div>
+      <SocialComponents/>
+    </div> </div>
 
   <div class="container-gallery">
     <div class="container-gallery-item">
