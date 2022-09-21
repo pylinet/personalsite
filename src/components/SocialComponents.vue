@@ -16,10 +16,11 @@
 </template>
 
 <style>
-    .container-social {
+  .container-social {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  margin-top: 100px;
   align-items: center;
 }
 </style>
