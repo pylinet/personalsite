@@ -1,7 +1,7 @@
 <script setup>
 import ProjectThumbnail from "./ProjectThumbnail.vue";
 
-const imageUrl = new URL('/Hana-WindmillGreen.jpg', import.meta.url)
+const imageUrl = new URL("/Hana-WindmillGreen.jpg", import.meta.url);
 
 const items = {
   Hana: {
