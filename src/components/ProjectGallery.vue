@@ -1,15 +1,17 @@
 <script setup>
 import ProjectThumbnail from "./ProjectThumbnail.vue";
 
+const imageUrl = new URL('/Hana-WindmillGreen.jpg', import.meta.url)
+
 const items = {
   Hana: {
-    slide: "/Hana-WindmillGreen.jpg",
+    slide: "imageUrl",
     projecturl: "/hana",
     alt: "Windmill Green lobby located in a co-working office designed by CBRE.",
     hover: "CBRE Hana Co-Working",
   },
   Cottage: {
-    slide: "/Cottage-IllustrationInterior.jpg",
+    slide: "/personalsite/Cottage-IllustrationInterior.jpg",
     projecturl: "/cottage",
     alt: "Accessory dwelling unit interior rendering.",
     hover: "Cottage ADUs",
