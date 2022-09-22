@@ -5,7 +5,7 @@
         <p class="text-body">Back to the Top</p>
       </div>
       <div class="container-button-item">
-        <img src="@/assets/icons/northarrow.svg" height="20" />
+        <img src="/northarrow.svg" height="20" />
       </div>
     </div>
   </router-link>

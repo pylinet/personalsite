@@ -4,7 +4,7 @@
       <p class="text-body">Next Project</p>
     </div>
     <div class="container-button-item">
-      <img src="@/assets/icons/rightarrow.svg" height="15" />
+      <img src="/rightarrow.svg" height="15" />
     </div>
   </div>
 </template>
