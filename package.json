@@ -1,6 +1,7 @@
 {
   "name": "pyline-website",
   "version": "0.0.0",
+  "homepage": "https://pylinet.github.io/personalsite/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
