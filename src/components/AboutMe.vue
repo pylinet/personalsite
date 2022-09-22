@@ -5,10 +5,7 @@ const greeting = "Hi, I'm Pyline!";
 <template>
   <div class="container">
     <div class="container-item" style="flex-grow: 0.5">
-      <img
-        src="@/assets/images/portrait.svg"
-        alt="Self-portrait illustration by Pyline."
-      />
+      <img src="/portrait.svg" alt="Self-portrait illustration by Pyline." />
     </div>
     <div class="container-item" style="flex-grow: 2">
       <h1>{{ greeting }}</h1>
