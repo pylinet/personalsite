@@ -14,6 +14,7 @@ const routes = [
 ];
 
 const router = createRouter({
+  base: process.env.NODE_ENV === 'production' ? 'personalsite' : '/',
   history: createWebHistory(),
   routes,
   scrollBehavior(top, back, savedPosition) {

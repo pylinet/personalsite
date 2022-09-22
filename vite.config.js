@@ -5,7 +5,9 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'personalsite',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/personalsite/'
+    : '/',
   plugins: [vue()],
   build: {
     outDir: 'docs'
