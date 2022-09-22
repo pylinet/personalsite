@@ -1,15 +1,19 @@
+<script setup>
+import SocialComponents from "./SocialComponents.vue";
+</script>
+
 <template>
-      <nav class="navbar">
-      <img src="logo.svg" />
-    <ul class="nav-links">
-      <li><a href="about.asp">About</a></li>
-      <li><a href="blog.asp">Blog</a></li>
-    </ul>
+  <nav class="navbar">
+    <router-link to="/"> <img src="/src/assets/icons/logo.svg" /></router-link>
+    <!-- <ul class="nav-links">
+      <li><a class="social" href="about.asp">About</a></li>
+      <li><a class="social" href="blog.asp">Blog</a></li>
+    </ul> -->
+    <SocialComponents></SocialComponents>
   </nav>
 </template>
 
 <style>
-    
 /* Navigation Bar */
 
 ul {
@@ -25,8 +29,9 @@ ul {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 100px;
   flex-basis: auto;
+  padding-top: 100px;
 }
 
 .nav-links {
@@ -36,5 +41,4 @@ ul {
   gap: 50px;
   justify-content: space-between;
 }
-
 </style>
