@@ -26,7 +26,11 @@ If you turn this query off, you'll see that there are no left or right margins r
       gap: 50px;
     }
 
-    .container h1, .container .text-body-large, .container-footer {
+    .container-gallery-item {
+      height: 50%;
+    }
+
+    .container h1, .container .text-body-large, .container-footer, .text-body-small, .container h2 {
       text-align: center;
     }
   
@@ -36,3 +40,9 @@ If you turn this query off, you'll see that there are no left or right margins r
  
   }
   
+
+  @media screen and (max-width: 1100px) {
+    .container-gallery-item {
+      height: 20%;
+    }
+  }

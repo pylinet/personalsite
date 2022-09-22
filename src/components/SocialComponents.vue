@@ -1,26 +1,38 @@
+<script setup>
+import ButtonSocial from "./ButtonSocial.vue";
+const items = {
+  Linkedin: {
+    externalurl: "https://www.linkedin.com/in/pyline/",
+    iconpath: "src/assets/icons/linkedinicon.svg",
+  },
+  Github: {
+    externalurl: "https://www.linkedin.com/in/pyline/",
+    iconpath: "src/assets/icons/githubicon.svg",
+  },
+  Email: {
+    externalurl: "mailto:pylinet@gmail.com",
+    iconpath: "src/assets/icons/emailicon.svg",
+  },
+  Instagram: {
+    externalurl: "https://www.instagram.com/thelifeofpy/",
+    iconpath: "src/assets/icons/instagramicon.svg",
+  },
+};
+</script>
+
 <template>
-          <div class="container-social">
-        <a href="https://www.linkedin.com/in/pyline/"
-          ><img src="linkedinicon.svg"
-        /></a>
-        <a href="https://www.linkedin.com/in/pyline/"
-          ><img src="githubicon.svg"
-        /></a>
-        <a href="https://www.linkedin.com/in/pyline/"
-          ><img src="emailicon.svg"
-        /></a>
-        <a href="https://www.linkedin.com/in/pyline/"
-          ><img src="instagramicon.svg"
-        /></a>
-      </div>
+  <div class="container-social">
+    <div v-for="item in items" v-bind:key="item">
+      <ButtonSocial v-bind="item" />
+    </div>
+  </div>
 </template>
 
 <style>
-  .container-social {
+.container-social {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  margin-top: 100px;
   align-items: center;
 }
 </style>

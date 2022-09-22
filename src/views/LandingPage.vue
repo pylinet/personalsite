@@ -1,48 +1,19 @@
 <script setup>
-import SocialComponents from '../components/SocialComponents.vue';
-
-import { ref } from 'vue'
-
-const greeting = "Hi, I'm Pyline!"
-
-const intro = "I’m an architect, design ops leader, and amateur coder. Let's collaborate!"
-
-const slides = ref([{link:"/src/assets/images/square.png"},{link:"/src/assets/images/square.png"}])
-
+import FooterComponent from "../components/FooterComponent.vue";
+import ButtonBackToTop from "../components/ButtonBackToTop.vue";
+import AboutMe from "../components/AboutMe.vue";
+import ProjectGallery from "../components/ProjectGallery.vue";
 </script>
 
 <template>
-
-
-<div class="container">
-  <div v-for="slide in slides">
-  <img :src="slide.link"/>
-</div>
-
-</div>
-
-  <div class="container">
-    <div class="container-item">
-      <img src="@/assets/images/portrait.svg" alt="Self-portrait illustration by Pyline."/>
+  <div>
+    <div class="layout">
+      <AboutMe></AboutMe>
+      <ProjectGallery></ProjectGallery>
+      <div class="container">
+        <ButtonBackToTop></ButtonBackToTop>
+      </div>
     </div>
-    <div class="container-item">
-      <h1>{{ greeting }}</h1>
-      <p class="text-body-large">
-        {{intro}}
-      </p>
-      <SocialComponents/>
-    </div> </div>
-
-  <div class="container-gallery">
-    <div class="container-gallery-item">
-      <img src="Hana-WindmillGreen.jpg" alt="Windmill Green lobby located in a co-working office designed by CBRE."/>
-    </div>
-    <div class="container-gallery-item">
-
-      <img  src="SHoPUber.jpg" /></div>
-      <div class="container-gallery-item">
-      <img src="CottageIllustrationInterior.jpg" alt="Interior view of a multi-story vertical garden at Uber's headquarters in San Francisco."/>
-    </div>
+    <FooterComponent></FooterComponent>
   </div>
-
 </template>
