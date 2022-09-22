@@ -16,16 +16,10 @@ const routes = [
     name: "LandingPage",
     component: LandingPage,
   },
-  {
-    path: '/<REPO-NAME>/:queryParams(.*)',
-    name: 'Result',
-    component: Result,
-    props: true
-  }
 ];
 
 const router = createRouter({
-  base: process.env.NODE_ENV === "production" ? "personalsite" : "/",
+  base: process.env.NODE_ENV === "production" ? "/personalsite/" : "/",
   history: createWebHistory(),
   routes,
   scrollBehavior(top, back, savedPosition) {
