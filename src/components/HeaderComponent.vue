@@ -4,7 +4,9 @@ import SocialComponents from "./SocialComponents.vue";
 
 <template>
   <nav class="navbar">
-    <router-link to="/"> <img src="/logo.svg" /></router-link>
+    <router-link :to="{ name: 'LandingPage' }">
+      <img src="/logo.svg" />
+    </router-link>
     <!-- <ul class="nav-links">
       <li><a class="social" href="about.asp">About</a></li>
       <li><a class="social" href="blog.asp">Blog</a></li>

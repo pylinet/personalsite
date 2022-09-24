@@ -4,22 +4,23 @@ import HanaPage from "@/views/HanaPage.vue";
 import CottagePage from "@/views/CottagePage.vue";
 import SHoPPage from "@/views/SHoPPage.vue";
 import WXYPage from "@/views/WXYPage.vue";
+import baseUrl from "../base";
 
 const routes = [
-  { path: "/", name: "LandingPage", component: LandingPage },
-  { path: "/hana", name: "HanaPage", component: HanaPage },
-  { path: "/cottage", name: "CottagePage", component: CottagePage },
-  { path: "/shop", name: "SHoPPage", component: SHoPPage },
-  { path: "/wxy", name: "WXYPage", component: WXYPage },
-  {
-    path: "/personalsite/",
-    name: "LandingPage",
-    component: LandingPage,
-  },
+  { path: baseUrl + "/", name: "LandingPage", component: LandingPage },
+  { path: baseUrl + "/hana", name: "HanaPage", component: HanaPage },
+  { path: baseUrl + "/cottage", name: "CottagePage", component: CottagePage },
+  { path: baseUrl + "/shop", name: "SHoPPage", component: SHoPPage },
+  { path: baseUrl + "/wxy", name: "WXYPage", component: WXYPage },
+  // {
+  //   path: "/personalsite/",
+  //   name: "LandingPage",
+  //   component: LandingPage,
+  // },
 ];
 
 const router = createRouter({
-  base: process.env.NODE_ENV === "production" ? "/personalsite/" : "/",
+  base: "/personalsite/",
   history: createWebHistory(),
   routes,
   scrollBehavior(top, back, savedPosition) {
