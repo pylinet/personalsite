@@ -7,20 +7,15 @@ import WXYPage from "@/views/WXYPage.vue";
 import baseUrl from "../base";
 
 const routes = [
-  { path: baseUrl + "/", name: "LandingPage", component: LandingPage },
-  { path: baseUrl + "/hana", name: "HanaPage", component: HanaPage },
-  { path: baseUrl + "/cottage", name: "CottagePage", component: CottagePage },
-  { path: baseUrl + "/shop", name: "SHoPPage", component: SHoPPage },
-  { path: baseUrl + "/wxy", name: "WXYPage", component: WXYPage },
-  // {
-  //   path: "/personalsite/",
-  //   name: "LandingPage",
-  //   component: LandingPage,
-  // },
+  { path: baseUrl, name: "LandingPage", component: LandingPage },
+  { path: baseUrl + "hana", name: "HanaPage", component: HanaPage },
+  { path: baseUrl + "cottage", name: "CottagePage", component: CottagePage },
+  { path: baseUrl + "shop", name: "SHoPPage", component: SHoPPage },
+  { path: baseUrl + "wxy", name: "WXYPage", component: WXYPage },
 ];
 
 const router = createRouter({
-  base: "/personalsite/",
+  // base: baseUrl,
   history: createWebHistory(),
   routes,
   scrollBehavior(top, back, savedPosition) {

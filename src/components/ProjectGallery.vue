@@ -17,14 +17,14 @@ const items = {
     hover: "Cottage ADUs",
   },
   WXY: {
-    name: 'WXYPage',
+    name: "WXYPage",
     slide: "/WXY-Javits.jpg",
     projecturl: "/WXY",
     alt: "Rooftop pavilion at the Javits Center in New York City.",
     hover: "WXY Studio",
   },
   SHoP: {
-    name: 'SHoPPage',
+    name: "SHoPPage",
     slide: "/SHoP-Uber.jpg",
     projecturl: "/shop",
     alt: "Interior view of a multi-story vertical garden at Uber's headquarters in San Francisco.",
