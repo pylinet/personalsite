@@ -7,6 +7,7 @@ import WXYPage from "@/views/WXYPage.vue";
 import baseUrl from "../base";
 
 const routes = [
+  { path: "/", name: "LandingPage", component: LandingPage },
   { path: baseUrl, name: "LandingPage", component: LandingPage },
   { path: baseUrl + "hana", name: "HanaPage", component: HanaPage },
   { path: baseUrl + "cottage", name: "CottagePage", component: CottagePage },
@@ -15,7 +16,6 @@ const routes = [
 ];
 
 const router = createRouter({
-  // base: baseUrl,
   history: createWebHistory(),
   routes,
   scrollBehavior(top, back, savedPosition) {
