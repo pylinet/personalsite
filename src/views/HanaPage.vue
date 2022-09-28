@@ -24,8 +24,8 @@ const items = {
   image2alt: "",
   image3,
   image3alt: "",
-  prevproject: "/shop",
-  nextproject: "/cottage",
+  prevproject: SHoPPage,
+  nextproject: CottagePage,
 };
 </script>
 
