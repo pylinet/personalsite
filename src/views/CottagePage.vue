@@ -6,6 +6,8 @@ import headerimage from "../assets/Cottage/Cottage-IllustrationInterior.jpg";
 import image1 from "../assets/Cottage/Cottage-Axon.png";
 import image2 from "../assets/Cottage/Cottage-ElevationsAndSections.jpg";
 import image3 from "../assets/Cottage/Cottage-ADUConstruction.jpg";
+import baseUrl from "../base";
+
 
 const items = {
   title: "A start-up reinveting residential design.",
@@ -23,9 +25,13 @@ const items = {
   image2alt: "Axonometric drawing of a Cottage ADU.",
   image3,
   image3alt: "Photo of an accessory dwelling unit under construction.",
-  prevproject: "/hana",
-  nextproject: "/wxy",
+  prevproject: baseUrl + "hana", name: "HanaPage", component: HanaPage,
+  nextproject: baseUrl + "wxy", name: "WXYPage", component: WXYPage,
 };
+
+
+
+
 </script>
 
 <template>
@@ -33,3 +39,6 @@ const items = {
     <ProjectPage v-bind="items" />
   </div>
 </template>
+
+
+
