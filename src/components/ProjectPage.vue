@@ -19,7 +19,6 @@ defineProps([
   "title",
   "prevproject",
   "nextproject",
-  "name",
 ]);
 </script>
 
