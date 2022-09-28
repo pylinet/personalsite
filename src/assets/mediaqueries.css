@@ -22,21 +22,49 @@ If you turn this query off, you'll see that there are no left or right margins r
     
     .container {
       flex-direction: column;
-      margin-top: 80px;
+      margin-top: 20px;
       gap: 50px;
     }
 
     .container-gallery-item {
       height: 50%;
+      margin-bottom: 20px;
     }
 
-    .container h1, .container .text-body-large, .container-footer, .text-body-small, .container h2 {
+    .container h1, .container-footer {
       text-align: center;
     }
-  
+
+    .container-gallery {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .container-gallery-item h2 {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+    
+    
+    .text-body-large {
+      font-size: 18px;
+    }
     .container-social, .container-footer {
       justify-content: center;
     }
+
+/* Removes text from next, prev, top of page button. Only shows arrows. */
+  .container-button-item .text-body {
+    display: none;
+  }
+
+/* Works with previous property to remove gaps between the flex boxes. */
+  .container-button {
+    gap: 0px;
+  }
  
   }
   

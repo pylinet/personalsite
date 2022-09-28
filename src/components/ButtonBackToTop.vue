@@ -1,6 +1,6 @@
 <template>
   <router-link to @click="moveUp">
-    <div class="container-button social">
+    <div class="container-button">
       <div class="container-button-item">
         <p class="text-body">Back to the Top</p>
       </div>

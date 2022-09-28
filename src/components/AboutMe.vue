@@ -10,6 +10,7 @@ const greeting = "Hi, I'm Pyline!";
     </div>
     <div class="container-item" style="flex-grow: 2">
       <h1>{{ greeting }}</h1>
+      <br>
       <p class="text-body-large">
         I’m an architect, design ops leader, and amateur coder. Let's
         collaborate! <br /><br />
@@ -20,5 +21,5 @@ const greeting = "Hi, I'm Pyline!";
       </p>
     </div>
   </div>
-  <br /><br />
+
 </template>
