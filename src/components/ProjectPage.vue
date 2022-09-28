@@ -71,10 +71,7 @@ defineProps([
           <img class="container-image" :src="image3" :alt="image3alt" />
         </div>
       </div>
-      <ButtonComponents
-        :prevproject="prevproject"
-        :nextproject="nextproject"
-      ></ButtonComponents>
+      <ButtonComponents></ButtonComponents>
     </div>
     <FooterComponent></FooterComponent>
   </div>
