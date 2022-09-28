@@ -10,11 +10,11 @@ defineProps(["prevproject", "nextproject"]);
 
 <template>
   <div class="container-button">
-    <router-link :to="{name: prevproject}">
+    <router-link class="social" :to="{name: prevproject}">
       <ButtonPrevProject></ButtonPrevProject>
     </router-link>
-    <ButtonBackToTop></ButtonBackToTop>
-    <router-link :to="{name: nextproject}">
+    <ButtonBackToTop class="social"></ButtonBackToTop>
+    <router-link class="social" :to="{name: nextproject}">
       <ButtonNextProject></ButtonNextProject>
     </router-link>
   </div>

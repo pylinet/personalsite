@@ -3,7 +3,7 @@ import leftArrow from '../assets/Navigation/leftarrow.svg'
 </script>
 
 <template>
-  <div class="container-button social">
+  <div class="container-button">
     <div class="container-button-item">
       <img :src="leftArrow" height="15" />
     </div>
