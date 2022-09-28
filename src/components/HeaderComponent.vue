@@ -1,11 +1,12 @@
 <script setup>
 import SocialComponents from "./SocialComponents.vue";
+import logo from '../assets/logo.svg'
 </script>
 
 <template>
   <nav class="navbar">
     <router-link :to="{ name: 'LandingPage' }">
-      <img src="/logo.svg" />
+      <img :src="logo" />
     </router-link>
     <!-- <ul class="nav-links">
       <li><a class="social" href="about.asp">About</a></li>

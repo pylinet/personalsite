@@ -1,21 +1,28 @@
 <script setup>
 import ButtonSocial from "./ButtonSocial.vue";
+
+// images
+import linkedinIcon from '../assets/Social/linkedinicon.svg'
+import githubIcon from '../assets/Social/githubicon.svg'
+import emailIcon from '../assets/Social/emailicon.svg'
+import instagramIcon from '../assets/Social/instagramicon.svg'
+
 const items = {
   Linkedin: {
     externalurl: "https://www.linkedin.com/in/pyline/",
-    iconpath: "/linkedinicon.svg",
+    iconpath: linkedinIcon,
   },
   Github: {
-    externalurl: "https://www.linkedin.com/in/pyline/",
-    iconpath: "/githubicon.svg",
+    externalurl: "https://github.com/pylinet",
+    iconpath: githubIcon,
   },
   Email: {
     externalurl: "mailto:pylinet@gmail.com",
-    iconpath: "/emailicon.svg",
+    iconpath: emailIcon,
   },
   Instagram: {
     externalurl: "https://www.instagram.com/thelifeofpy/",
-    iconpath: "/instagramicon.svg",
+    iconpath: instagramIcon,
   },
 };
 </script>

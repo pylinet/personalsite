@@ -8,6 +8,7 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   base: baseUrl,
+  publicDir: baseUrl,
   plugins: [vue()],
   build: {
     outDir: "docs",

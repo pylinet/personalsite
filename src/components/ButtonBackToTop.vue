@@ -5,13 +5,15 @@
         <p class="text-body">Back to the Top</p>
       </div>
       <div class="container-button-item">
-        <img src="/northarrow.svg" height="20" />
+        <img :src="northArrow" height="20" />
       </div>
     </div>
   </router-link>
 </template>
 
 <script setup>
+import northArrow from "../assets/Navigation/northarrow.svg";
+
 function moveUp() {
   window.scrollTo(0, 0);
 }
