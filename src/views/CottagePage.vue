@@ -25,8 +25,8 @@ const items = {
   image2alt: "Axonometric drawing of a Cottage ADU.",
   image3,
   image3alt: "Photo of an accessory dwelling unit under construction.",
-  prevproject: "/hana",
-  nextproject: "/wxy",
+  prevproject: "HanaPage",
+  nextproject: "CottagePage",
 };
 
 
