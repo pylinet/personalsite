@@ -19,6 +19,7 @@ defineProps([
   "title",
   "prevproject",
   "nextproject",
+  "name",
 ]);
 </script>
 
@@ -71,7 +72,10 @@ defineProps([
           <img class="container-image" :src="image3" :alt="image3alt" />
         </div>
       </div>
-      <ButtonComponents></ButtonComponents>
+      <ButtonComponents
+        :prevproject="prevproject"
+        :nextproject="nextproject"
+      ></ButtonComponents>
     </div>
     <FooterComponent></FooterComponent>
   </div>

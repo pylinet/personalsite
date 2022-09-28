@@ -27,8 +27,8 @@ const items = {
     "Reflected ceiling plan drawing showing lighting and duct locations.",
   image3,
   image3alt: "Picture of a happy hour on the rooftop pavilion.",
-  prevproject: "/cottage",
-  nextproject: "/shop",
+  prevproject: "CottagePage",
+  nextproject: "SHoPPage",
 };
 </script>
 

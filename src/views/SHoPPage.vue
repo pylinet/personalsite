@@ -23,8 +23,8 @@ const items = {
   image2alt: "Diagram showing how natural daylight enters the building atrium.",
   image3,
   image3alt: "Exterior photo of a building headquarters in San Francisco.",
-  prevproject: "/wxy",
-  nextproject: "/hana",
+  prevproject: "WXYPage",
+  nextproject: "HanaPage",
 };
 </script>
 
