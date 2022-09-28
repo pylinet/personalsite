@@ -1,7 +1,7 @@
-<script setup>
+ <script setup>
 // define properties that will be used in components
 
-defineProps(["projecturl", "slide", "alt", "hover", "name"]);
+defineProps(["slide", "alt", "hover", "name"]);
 </script>
 
 <template>

@@ -8,7 +8,6 @@ import image2 from "../assets/Cottage/Cottage-ElevationsAndSections.jpg";
 import image3 from "../assets/Cottage/Cottage-ADUConstruction.jpg";
 
 
-
 const items = {
   title: "A start-up reinveting residential design.",
   companyname: "Cottage",
@@ -26,7 +25,7 @@ const items = {
   image3,
   image3alt: "Photo of an accessory dwelling unit under construction.",
   prevproject: "HanaPage",
-  nextproject: "CottagePage",
+  nextproject: CottagePage,
 };
 
 
