@@ -5,7 +5,7 @@ import ButtonBackToTop from "./ButtonBackToTop.vue";
 
 // define properties that will be used in components
 
-defineProps(["prevproject", "nextproject", "name"]);
+defineProps(["prevproject", "nextproject"]);
 </script>
 
 <template>
