@@ -1,14 +1,21 @@
+<!-- This is a button to go to the next project page. -->
+
 <script setup>
-import rightArrow from "../assets/Navigation/rightarrow.svg";
+// Import graphic for use in component.
+import rightArrow from "../assets/navigation-icons/right-arrow.svg";
+defineProps(["nextProject"]);
 </script>
 
 <template>
-  <div class="container-button">
-    <div class="container-button-item">
-      <p class="text-body">Next Project</p>
+  <router-link class="button" :to="{ name: nextProject }">
+    <div class="container-button">
+      <div class="container-button-item">
+        <p class="text-body">Next Project</p>
+      </div>
+      <div class="container-button-item">
+        <img :src="rightArrow" height="15" />
+      </div>
     </div>
-    <div class="container-button-item">
-      <img :src="rightArrow" height="15" />
-    </div>
-  </div>
+  </router-link>
 </template>
+ 

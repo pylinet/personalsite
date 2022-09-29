@@ -1,5 +1,7 @@
- <script setup>
-// define properties that will be used in components
+<!-- This is a the individual project container shown in the project gallery component. -->
+
+<script setup>
+// Define properties that will be used in components
 
 defineProps(["slide", "alt", "hover", "name"]);
 </script>

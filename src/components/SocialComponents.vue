@@ -1,28 +1,34 @@
-<script setup>
-import ButtonSocial from "./ButtonSocial.vue";
+<!-- Component to display all social media icon links. -->
 
-// images
-import linkedinIcon from '../assets/Social/linkedinicon.svg'
-import githubIcon from '../assets/Social/githubicon.svg'
-import emailIcon from '../assets/Social/emailicon.svg'
-import instagramIcon from '../assets/Social/instagramicon.svg'
+<script setup>
+import SocialButton from "./SocialButton.vue";
+
+// Import icons
+import linkedinIcon from "../assets/social-icons/linkedin-icon.svg";
+import githubIcon from "../assets/social-icons/github-icon.svg";
+import emailIcon from "../assets/social-icons/email-icon.svg";
+import instagramIcon from "../assets/social-icons/instagram-icon.svg";
 
 const items = {
   Linkedin: {
-    externalurl: "https://www.linkedin.com/in/pyline/",
-    iconpath: linkedinIcon,
+    externalUrl: "https://www.linkedin.com/in/pyline/",
+    iconPath: linkedinIcon,
+    alt: "Link to Pyline's Linkedin.",
   },
   Github: {
-    externalurl: "https://github.com/pylinet",
-    iconpath: githubIcon,
+    externalUrl: "https://github.com/pylinet",
+    iconPath: githubIcon,
+    alt: "Link to Pyline's GitHub.",
   },
   Email: {
-    externalurl: "mailto:pylinet@gmail.com",
-    iconpath: emailIcon,
+    externalUrl: "mailto:pylinet@gmail.com",
+    iconPath: emailIcon,
+    alt: "Link to Pyline's email.",
   },
   Instagram: {
-    externalurl: "https://www.instagram.com/thelifeofpy/",
-    iconpath: instagramIcon,
+    externalUrl: "https://www.instagram.com/thelifeofpy/",
+    iconPath: instagramIcon,
+    alt: "Link to Pyline's Instagram.",
   },
 };
 </script>
@@ -30,12 +36,12 @@ const items = {
 <template>
   <div class="container-social">
     <div v-for="item in items" v-bind:key="item">
-      <ButtonSocial v-bind="item" />
+      <SocialButton v-bind="item" />
     </div>
   </div>
 </template>
 
-<style>
+<style scoped>
 .container-social {
   display: flex;
   flex-direction: row;
