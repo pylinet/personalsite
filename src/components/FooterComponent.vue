@@ -1,3 +1,4 @@
+<!-- Component shown on all pages. Rendered in App.vue file. -->
 <template>
   <div class="container-main-footer">
     <div class="container-footer">
@@ -8,23 +9,3 @@
     </div>
   </div>
 </template>
-
-<style>
-.container-main-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--c-med-grey);
-  margin-top: 100px;
-}
-.container-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 1000px;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  background-color: transparent;
-}
-</style>

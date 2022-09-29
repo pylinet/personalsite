@@ -1,24 +1,25 @@
+/* Import fonts from Google that will be used in this page. */
+
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto+Flex:opsz,wght@8..144,600&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;1,8..144,500&family=Roboto:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
 
 /* Global Configuration
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  
   /* Typography */
   --serif-font-family: "Lora", "Garamond", serif;
   --sans-serif-font-family: "Roboto Flex", "Helvetica", sans-serif;
 
   /* Colors */
-  --c-med-grey: #D6D6D6;
+  --c-med-grey: #d6d6d6;
   --c-white: #ffffff;
   --c-light-grey: #ededed;
   --c-black: #000000;
-  --c-dark-grey: 
+  --c-dark-grey: ;
 }
 
 /* Light mode color scheme */
-/* semantic color variables for this project */
+/* Semantic color variables for this project */
 :root {
   --color-background: var(--c-light-grey);
   --color-text: var(--c-black);
@@ -39,58 +40,43 @@
 /* Structure */
 
 /* Browsers automatically add 8px margin to body. To get rid of it, set it as 0. */
-
 body {
   margin: 0px;
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
 }
 
-/* On page load, fade body in. */ 
-@keyframes fadeInAnimation  {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
+/* Base layout currently designed for wider screens with media queries for mobile in the mediaqueries.css file. */
 .layout {
   max-width: 1000px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 00px;
+  padding-top: 0px;
 }
 
-/* Flex Container in the Row Direction */
+/* Flex container in the row direction */
 .container {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  /* align-items: center; */
-  gap: 75px;
+  gap: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
+  
 }
 
+/* Item that goes into the flex container. */
 .container-item {
   display: flex;
-  flex-basis: 0;
   flex-direction: column;
-  height: 100%;
 }
 
-
-/* Flex Gallery Container */ 
+/* Flex gallery container - used when there are a series of images to be displayed, like on the landing page. */
 .container-gallery {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -102,12 +88,12 @@ body {
   opacity: 1;
   height: 600px;
   width: 100%;
-  transition: .3s ease;
+  transition: 0.3s ease;
   backface-visibility: hidden;
   margin-bottom: 50px;
 }
 
-
+/* Ensures the image fills up the container and scales properly. */
 .container-image {
   max-width: 100%;
   max-height: 100%;
@@ -115,35 +101,77 @@ body {
   background-color: transparent;
 }
 
-
-
-
-/* Links */ 
+/* Links */
 a {
   text-decoration: none;
 }
 
+/* Buttons */
 
-/* 
-a:hover {
-  opacity: 0.5;
-} */
+.container-all-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .container-button {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  gap: 75px;
+  gap: 10px;
+  align-items: center;
 
 }
 
-/* Image Hover */
 
+.container-button-item {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-top: 20px;
+}
+
+
+.button {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  border-bottom: 3px solid #333333;
+  overflow: hidden;
+  margin-bottom: -3px;
+  opacity: 0.5;
+}
+
+
+/* Container footer */
+
+.container-main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-med-grey);
+  margin-top: 100px;
+}
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: transparent;
+}
+
+/* Image Multiply used on Single Project Page Vue file */
 .multiply {
   mix-blend-mode: multiply;
 }
 
+/* Image Hover */
 .fullcap {
   display: flex;
   justify-content: center;
@@ -151,35 +179,24 @@ a:hover {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   background-color: var(--c-med-grey);
   color: var(--c-black);
-
 }
- 
-/* (D) SHOW/HIDE */
+
+/* Full cap hover on images */
 .fullcap {
-  visibility: none; opacity: 0;
+  visibility: none;
+  opacity: 0;
   transition: opacity 0.3s;
 }
 
 .fullcap:hover {
-  visibility: visible; opacity: .85;
+  visibility: visible;
+  opacity: 0.85;
 }
 
-
-.social {
-  text-decoration: none;
-  opacity: 1;
-  transition: opacity 0.2s;
-}
-
-.social:hover {
-  border-bottom: 3px solid #333333;
-  overflow: hidden;
-  margin-bottom: -3px;
-  opacity: 0.5;
-}
 
 
 /* Typography */
@@ -190,7 +207,6 @@ h1 {
   font-size: 52px;
   overflow-wrap: anywhere;
   background-color: transparent;
-
 }
 
 h2 {
@@ -199,52 +215,21 @@ h2 {
   font-size: 36px;
   overflow-wrap: anywhere;
   background-color: transparent;
-
 }
 
 .text-body-large {
-  font-size: 24px;
+  font-size: 20px;
   overflow-wrap: anywhere;
   background-color: transparent;
-
 }
 
 strong {
   font-weight: 700;
   background-color: transparent;
-
 }
 
 .text-body-small {
   font-size: 16px;
   background-color: transparent;
-
 }
 
-/* Buttons */ 
-
-.container-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-
-
-.container-button {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-}
-
-
-
-.container-button-item {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  margin-top: 20px;
-
-}

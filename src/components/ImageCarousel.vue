@@ -61,7 +61,7 @@ export default {
   </section>
 </template>
 
-<style>
+<style scoped>
 .carousel {
   width: 100vw;
   height: 100vh;

@@ -1,43 +1,41 @@
 <script setup>
-import ProjectPage from "../components/ProjectPage.vue";
+import SingleProjectPage from "../components/SingleProjectPage.vue";
 
 //images
-import headerimage from "../assets/Cottage/Cottage-IllustrationInterior.jpg";
-import image1 from "../assets/Cottage/Cottage-Axon.png";
-import image2 from "../assets/Cottage/Cottage-ElevationsAndSections.jpg";
-import image3 from "../assets/Cottage/Cottage-ADUConstruction.jpg";
-
+import headerImage from "../assets/cottage-adus/cottage-illustration-interior.jpg";
+import image1 from "../assets/cottage-adus/cottage-3D-drawing.png";
+import image2 from "../assets/cottage-adus/cottage-elevations-and-sections.jpg";
+import image3 from "../assets/cottage-adus/cottage-adu-construction.jpg";
 
 const items = {
   title: "A start-up reinveting residential design.",
-  companyname: "Cottage",
-  companylink: "https://www.cotta.ge/featured",
-  companyabout:
+  companyName: "Cottage",
+  companyLink: "https://www.cotta.ge/featured",
+  companyAbout:
     "Cottage is a team of architects, builders, sales, and operation managers committed to solving housing affordability by making it easy to build an accessory dwelling unit (ADU). The company’s goal is to deliver custom ADUs at a fraction of the cost and timeline of traditional architecture. To serve clients, Cottage built a design studio for freelance architectural designers and consultancies, along with design systems platforms to supercharge their work.  I joined Cottage when it was a seed-stage company as its first Design Studio Manager, and my role was to manage and grow the design studio. As a business operations leader, I focused on developing playbooks to scale studio management, mentored and trained designers, and developed performance tracking mechanisms to measure my OKR’s. In addition to running the studio, I designed and delivered +10 ADU’s from schematic design to permit submission, some of which are demonstrated on the following 2 pages.",
-  companyrole1: "Design Studio Manager from July 2021 - May 2022",
-  companyrole2: "",
-  headerimage,
-  headerimagealt: "Interior 3D rendering of a living room and kitchen.",
+  companyRole1: "Design Studio Manager from July 2021 to May 2022",
+  companyRole2: "",
+  headerImage,
+  headerImageAlt:
+    "An accessory dwelling unit interior 3D rendering showing the living room and kitchen.",
+  headerImageTitle: "Photo © Pyline Tangsuvanich.",
   image1,
-  image1alt: "3D Axonometric drawing of an accessory dwelling unit design.",
+  image1Alt: "3D Axonometric drawing of an accessory dwelling unit design.",
+  image1Title: "Photo © Pyline Tangsuvanich.",
   image2,
-  image2alt: "Axonometric drawing of a Cottage ADU.",
+  image2Alt:
+    "Elevation and section architectural drawings of the accessory dwelling unit.",
+  image2Title: "Photo © Pyline Tangsuvanich.",
   image3,
-  image3alt: "Photo of an accessory dwelling unit under construction.",
-  prevproject: "HanaPage",
-  nextproject: "WXYPage",
+  image3Alt: "Photo of an accessory dwelling unit under construction.",
+  image3Title: "Photo © Pyline Tangsuvanich.",
+  prevProject: "HanaPage",
+  nextProject: "WXYPage",
 };
-
-
-
-
 </script>
 
 <template>
   <div>
-    <ProjectPage v-bind="items" />
+    <SingleProjectPage v-bind="items" />
   </div>
 </template>
-
-
-

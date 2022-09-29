@@ -4,6 +4,7 @@ import HanaPage from "@/views/HanaPage.vue";
 import CottagePage from "@/views/CottagePage.vue";
 import SHoPPage from "@/views/SHoPPage.vue";
 import WXYPage from "@/views/WXYPage.vue";
+import AboutPage from "@/views/AboutPage.vue";
 import baseUrl from "../base";
 
 const routes = [
@@ -13,6 +14,7 @@ const routes = [
   { path: baseUrl + "cottage", name: "CottagePage", component: CottagePage },
   { path: baseUrl + "shop", name: "SHoPPage", component: SHoPPage },
   { path: baseUrl + "wxy", name: "WXYPage", component: WXYPage },
+  { path: baseUrl + "about", name: "AboutPage", component: AboutPage },
 ];
 
 const router = createRouter({

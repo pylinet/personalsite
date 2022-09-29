@@ -1,5 +1,8 @@
+<!-- Main app vue file that gets rendered. -->
+
 <script setup>
 import HeaderComponent from "./components/HeaderComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 </script>
 
 <template>
@@ -9,10 +12,15 @@ import HeaderComponent from "./components/HeaderComponent.vue";
       <component :is="Component" :key="$route.path"></component>
     </transition>
   </router-view>
+  <FooterComponent></FooterComponent>
 </template>
-<style>
+
+<style scoped>
+/* Import css files for styling. */
 @import "./assets/base.css";
 @import "./assets/mediaqueries.css";
+
+/* Animation to fade the entire web app onto the screen. */
 
 .fade-enter-active,
 .face-enter-to,

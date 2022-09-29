@@ -1,76 +1,89 @@
-
 /* Media queries */
 
 /* Preserves some padding on left & right as a desktop or tablet browser shrinks.
 If you turn this query off, you'll see that there are no left or right margins remaining as the page reduces. */
 
 @media screen and (min-width: 800px) {
-    .layout, .container-footer {
-      padding-left: 10%;
-      padding-right: 10%;
-    }
-  
+  .layout,
+  .container-footer {
+    padding-left: 10%;
+    padding-right: 10%;
   }
-  
+}
+
 /* For mobile or small tablets. */
 
-  @media screen and (max-width: 800px) {
-    .layout, .container-footer {
-      padding-left: 10%;
-      padding-right: 10%;
-    }
-    
-    .container {
-      flex-direction: column;
-      margin-top: 20px;
-      gap: 50px;
-    }
+@media screen and (max-width: 800px) {
+  .layout,
+  .container-footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
-    .container-gallery-item {
-      height: 50%;
-      margin-bottom: 20px;
-    }
+  .container {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 50px;
+  }
 
-    .container h1, .container-footer {
-      text-align: center;
-    }
+  .container-gallery-item {
+    height: 50%;
+    margin-bottom: 20px;
+  }
 
-    .container-gallery {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
+  .container h1,
+  .container-footer {
+    text-align: center;
+  }
 
-    .container-gallery-item h2 {
-      text-align: center;
-    }
+  .container-gallery {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    h2 {
-      font-size: 30px;
-    }
-    
-    
-    .text-body-large {
-      font-size: 18px;
-    }
-    .container-social, .container-footer {
-      justify-content: center;
-    }
+  .container-gallery-item h2 {
+    text-align: center;
+  }
 
-/* Removes text from next, prev, top of page button. Only shows arrows. */
-  .container-button-item .text-body {
+  h2 {
+    font-size: 30px;
+  }
+
+  /* On landing page */
+  .text-body-large {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .container-project-text-body .text-body-large {
+    text-align: left;
+  }
+
+  .container-social {
+    justify-content: center;
+  }
+
+  .container-footer {
+    justify-content: center;
+  }
+
+  /* Removes text from next, prev, top of page button. Only shows arrows. */
+  .container-button .text-body {
     display: none;
   }
 
-/* Works with previous property to remove gaps between the flex boxes. */
+  /* Works with previous property to remove gaps between the flex boxes. */
   .container-button {
     gap: 0px;
   }
- 
-  }
-  
 
-  @media screen and (max-width: 1100px) {
-    .container-gallery-item {
-      height: 20%;
-    }
+  .container-button-item {
+    flex: row;
   }
+}
+
+@media screen and (max-width: 1100px) {
+  .container-gallery-item {
+    height: 20%;
+  }
+}
