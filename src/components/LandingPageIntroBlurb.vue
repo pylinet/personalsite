@@ -20,7 +20,7 @@ const greeting = "Hi, I'm Pyline!";
         <i>
           <a class="button" href="mailto:pylinet@gmail.com">
             email me.</a></i><br>
-          For my resume, <a class="button" href="https://drive.google.com/file/d/1a03bu0Zp-Ez7g7u2sEDrfEUjqJCuoSgC/view?usp=sharing">
+          For my resume, <a class="button" href="https://pylinet.github.io/personalsite/assets/pyline-tangsuvanich-resume.pdf" target="_blank">
             <i>click here.</i></a>
           <br>Featured projects below 👇.
       </p>
