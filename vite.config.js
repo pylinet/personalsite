@@ -8,7 +8,8 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   base: baseUrl,
-  publicDir: baseUrl,
+  // public folder by default '<root>/public/'
+  publicDir: 'public',
   plugins: [vue()],
   build: {
     outDir: "docs",
