@@ -29,8 +29,8 @@ const items = {
   image3,
   image3Alt: "Photo of an accessory dwelling unit under construction.",
   image3Title: "Photo © Pyline Tangsuvanich.",
-  prevProject: "HanaPage",
-  nextProject: "WXYPage",
+  prevProject: "SHoPPage",
+  nextProject: "HanaPage",
 };
 </script>
 

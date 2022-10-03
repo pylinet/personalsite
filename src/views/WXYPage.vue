@@ -31,7 +31,7 @@ const items = {
   image3,
   image3Alt: "Picture of a happy hour on the Javits rooftop pavilion.",
   image3Title: "Photo © WXY Studio.",
-  prevProject: "CottagePage",
+  prevProject: "AirtablePage",
   nextProject: "SHoPPage",
 };
 </script>

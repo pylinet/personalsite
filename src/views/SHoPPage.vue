@@ -28,7 +28,7 @@ const items = {
   image3Alt: "Exterior photo of a building headquarters in San Francisco.",
   image3Title: "Photo © Jason O'Rear.",
   prevProject: "WXYPage",
-  nextProject: "HanaPage",
+  nextProject: "CottagePage",
 };
 </script>
 

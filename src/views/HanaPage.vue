@@ -32,8 +32,8 @@ const items = {
   image3Alt:
     "An interior photograph of the co-working lounge space with beautiful exterior views.",
   imageTitle: "Photo © CBRE.",
-  prevProject: "SHoPPage",
-  nextProject: "CottagePage",
+  prevProject: "CottagePage",
+  nextProject: "AirtablePage",
 };
 </script>
 
