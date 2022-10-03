@@ -58,7 +58,7 @@ defineProps([
           <div class="container-item container-project-text-body">
             <h2>{{ title }}</h2>
             <br />
-            <p class="text-body-large">
+            <p class="text-body-large css-fix">
               {{ companyAbout }}
             </p>
           </div>
@@ -103,6 +103,10 @@ defineProps([
 }
 .container-project-text-body {
   width: 60%;
+}
+
+.css-fix {
+  white-space: pre-wrap;
 }
 
 @media screen and (max-width: 800px) {

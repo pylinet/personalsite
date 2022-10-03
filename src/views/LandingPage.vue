@@ -9,7 +9,6 @@ import LandingPageProjectGallery from "../components/LandingPageProjectGallery.v
 <template>
   <div>
     <div class="layout">
-      <p>Open a PDF file <a href="/assets/pyline-tangsuvanich-resume.pdf">example</a>.</p>
       <LandingPageIntroBlurb></LandingPageIntroBlurb>
       <br />
       <LandingPageProjectGallery></LandingPageProjectGallery>

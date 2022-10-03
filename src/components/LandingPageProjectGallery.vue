@@ -8,20 +8,27 @@ import hanaSlide from "../assets/hana-co-working/hana-windmill-green-united-king
 import cottageSlide from "../assets/cottage-adus/cottage-illustration-interior.jpg";
 import wxySlide from "../assets/wxy-architects/wxy-javits-center-exterior.jpg";
 import shopUber from "../assets/shop-architects/shop-uber-headquarters-model.jpg";
+import airtableSlide from "../assets/airtable-interface/airtable-listing-view.jpg";
 
 // List of project objects and their properties.
 const items = {
+  Cottage: {
+    name: "CottagePage",
+    slide: cottageSlide,
+    alt: "An accessory dwelling unit interior 3D rendering showing the living room and kitchen.",
+    hover: "Cottage ADUs",
+  },
   Hana: {
     name: "HanaPage",
     slide: hanaSlide,
     alt: "A co-working reception desk with warm wood flooring, lush plants, and company logo wall.",
     hover: "CBRE Hana Co-Working",
   },
-  Cottage: {
-    name: "CottagePage",
-    slide: cottageSlide,
-    alt: "An accessory dwelling unit interior 3D rendering showing the living room and kitchen.",
-    hover: "Cottage ADUs",
+  Airtable: {
+    name: "AirtablePage",
+    slide: airtableSlide,
+    alt: "An interface to manage your saved property listings when you search for your new home.",
+    hover: "Dream Home Finder",
   },
   WXY: {
     name: "WXYPage",

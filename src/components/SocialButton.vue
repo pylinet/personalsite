@@ -10,8 +10,6 @@ defineProps(["externalUrl", "iconPath", "alt"]);
     :href="externalUrl"
     target="_blank"
     rel="noreferrer noopener"
-    ><img 
-    :src="iconPath"
-    :alt="alt"
+    ><img :src="iconPath" :alt="alt"
   /></a>
 </template>
