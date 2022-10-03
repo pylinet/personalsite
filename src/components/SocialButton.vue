@@ -1,7 +1,7 @@
 <!-- Individual button component for social media links. -->
 
 <script setup>
-defineProps(["externalUrl", "iconPath","alt"]);
+defineProps(["externalUrl", "iconPath", "alt"]);
 </script>
 
 <template>
@@ -10,7 +10,7 @@ defineProps(["externalUrl", "iconPath","alt"]);
     :href="externalUrl"
     target="_blank"
     rel="noreferrer noopener"
-    ><img
+    ><img 
     :src="iconPath"
     :alt="alt"
   /></a>

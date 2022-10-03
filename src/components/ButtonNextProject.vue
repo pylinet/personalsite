@@ -18,4 +18,3 @@ defineProps(["nextProject"]);
     </div>
   </router-link>
 </template>
- 

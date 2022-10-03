@@ -1,15 +1,16 @@
 <!-- Component shown on all pages. Rendered in App.vue file. -->
 
 <script setup>
-import SocialComponents from './SocialComponents.vue';
+import SocialComponents from "./SocialComponents.vue";
 </script>
 
 <template>
   <nav class="nav-bar">
     <router-link :to="{ name: 'LandingPage' }">
       <img
-      src="/public/pyline-tangsuvanich-leaf-logo.svg"
-      alt="Click to go back to home page." />
+        src="/public/pyline-tangsuvanich-leaf-logo.svg"
+        alt="Click to go back to home page."
+      />
     </router-link>
     <!-- <ul class="nav-links">
       <router-link :to="{ name: 'AboutPage' }"
