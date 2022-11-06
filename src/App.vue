@@ -1,12 +1,12 @@
 <!-- Main app vue file that gets rendered. -->
 
 <script setup>
-import HeaderComponent from "./components/HeaderComponent.vue";
+import NavigationComponent from "./components/NavigationComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 </script>
 
 <template>
-  <div class="layout"><HeaderComponent></HeaderComponent></div>
+  <div class="layout"><NavigationComponent></NavigationComponent></div>
   <router-view v-slot="{ Component }">
     <transition name="fade" mode="out-in">
       <component :is="Component" :key="$route.path"></component>
@@ -25,7 +25,7 @@ import FooterComponent from "./components/FooterComponent.vue";
 .fade-enter-active,
 .face-enter-to,
 .fade-leave-active {
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 .fade-enter-from,
 .fade-leave-to {
