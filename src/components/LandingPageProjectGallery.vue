@@ -58,7 +58,7 @@ const items = {
       >
         <i>click here.</i></a
       >
-      <br />
+      <br /><br />
     </p>
   <!-- This is a loop that displays all of the objects in items in the project thumbnail component.  -->
   <div v-for="item in items" v-bind:key="item" >

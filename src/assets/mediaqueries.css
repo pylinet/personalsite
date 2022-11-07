@@ -41,6 +41,10 @@ If you turn this query off, you'll see that there are no left or right margins r
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  
+  .container .container-image {
+    width: 150px;
+  }
 
   .container-gallery-item h2 {
     text-align: center;

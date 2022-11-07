@@ -8,19 +8,20 @@ import voyansi from "../assets/about/voyansi-logo.png";
 <div
     class="container"    style="
       align-items: center;
+      justify-content: center;
       padding-bottom: 60px;
       border-bottom: 3px;
       border-bottom-style: solid;
     ">
 
-         <div class="container-item" style="width:33%; align-items:center">
-            <a href="https://blog.airtable.com/announcing-the-winners-of-interface-designer-contest/"><img class="container-image-row" :src="airtable" alt="Airtable logo." /></a>
+         <div class="container-item" >
+            <a href="https://blog.airtable.com/announcing-the-winners-of-interface-designer-contest/"><img class="container-image" :src="airtable" alt="Airtable logo." /></a>
         </div>  
-        <div class="container-item" style="width:33%; align-items:center">
-            <a href="https://magazine.rice.edu/spring-2022/think-architect"><img class="container-image-row" :src="rice" alt="Rice University Magazine logo." /></a>
+        <div class="container-item">
+            <a href="https://magazine.rice.edu/spring-2022/think-architect"><img class="container-image" :src="rice" alt="Rice University Magazine logo." /></a>
         </div>  
-        <div class="container-item" style="width:33%; align-items:center">
-            <a href="https://www.youtube.com/watch?v=wzwtndkb0xc"><img class="container-image-row" :src="voyansi" alt="BIM logo." /></a>
+        <div class="container-item" >
+            <a href="https://www.youtube.com/watch?v=wzwtndkb0xc"><img class="container-image" :src="voyansi" alt="BIM logo." /></a>
         </div>  
     </div>
 
