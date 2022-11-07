@@ -4,15 +4,17 @@
 import ButtonBackToTop from "../components/ButtonBackToTop.vue";
 import LandingPageIntroBlurb from "../components/LandingPageIntroBlurb.vue";
 import LandingPageProjectGallery from "../components/LandingPageProjectGallery.vue";
+import FeaturedLinksComponent from "../components/FeaturedLinksComponent.vue";
 </script>
 
 <template>
   <div>
     <div class="layout">
       <LandingPageIntroBlurb></LandingPageIntroBlurb>
-      <br />
+
+      <FeaturedLinksComponent></FeaturedLinksComponent>
       <LandingPageProjectGallery></LandingPageProjectGallery>
-      <div class="container">
+      <div class="container" style="justify-content:right">
         <ButtonBackToTop></ButtonBackToTop>
       </div>
     </div>

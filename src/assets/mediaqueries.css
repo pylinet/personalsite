@@ -32,6 +32,7 @@ If you turn this query off, you'll see that there are no left or right margins r
   }
 
   .container h1,
+  .container h2, h2,
   .container-footer {
     text-align: center;
   }

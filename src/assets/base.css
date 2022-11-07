@@ -66,10 +66,23 @@ body {
   
 }
 
-/* Item that goes into the flex container. */
+/* Item that goes into the flex container in column. */
 .container-item {
   display: flex;
   flex-direction: column;
+}
+
+.container-item-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.container-image-row {
+  width: 80%;
+  height: 150px;
+  object-fit: contain;
+  background-color: transparent;
 }
 
 /* Flex gallery container - used when there are a series of images to be displayed, like on the landing page. */

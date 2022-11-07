@@ -41,6 +41,9 @@ ul {
   margin-bottom: 100px;
   flex-basis: auto;
   padding-top: 100px;
+  /* padding-bottom: 10px;
+  border-bottom: 3px;
+  border-bottom-style: solid; */
 }
 
 .nav-links {

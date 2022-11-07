@@ -46,8 +46,22 @@ const items = {
 </script>
 
 <template>
+      <h2>Select projects below 👇.</h2><br>
+    <p class="text-body-large">
+      For my work sample, please
+      <i> <a class="button" href="mailto:pylinet@gmail.com"> email me.</a></i
+      ><br />
+      For my resume,
+      <a
+        class="button"
+        href="https://drive.google.com/file/d/1a03bu0Zp-Ez7g7u2sEDrfEUjqJCuoSgC/view?usp=sharing"
+      >
+        <i>click here.</i></a
+      >
+      <br />
+    </p>
   <!-- This is a loop that displays all of the objects in items in the project thumbnail component.  -->
-  <div v-for="item in items" v-bind:key="item">
+  <div v-for="item in items" v-bind:key="item" >
     <LandingPageProjectThumbnail v-bind="item" />
   </div>
 </template>
