@@ -2,7 +2,7 @@
 import SingleProjectPage from "../components/SingleProjectPage.vue";
 
 //images
-import headerImage from "../assets/cottage-adus/cottage-illustration-interior.jpg";
+import headerImage from "../assets/cottage-adus/cottage-integrum-los-gatos.jpg";
 import image1 from "../assets/cottage-adus/cottage-3D-drawing.png";
 import image2 from "../assets/cottage-adus/cottage-elevations-and-sections.jpg";
 import image3 from "../assets/cottage-adus/cottage-adu-construction.jpg";

@@ -5,7 +5,7 @@ import LandingPageProjectThumbnail from "./LandingPageProjectThumbnail.vue";
 
 // Gallery images
 import hanaSlide from "../assets/hana-co-working/hana-windmill-green-united-kingdom-co-working.jpg";
-import cottageSlide from "../assets/cottage-adus/cottage-illustration-interior.jpg";
+import cottageSlide from "../assets/cottage-adus/cottage-integrum-los-gatos.jpg";
 import wxySlide from "../assets/wxy-architects/wxy-javits-center-exterior.jpg";
 import shopUber from "../assets/shop-architects/shop-uber-headquarters-model.jpg";
 import airtableSlide from "../assets/airtable-interface/airtable-listing-view.jpg";

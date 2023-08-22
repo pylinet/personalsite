@@ -24,11 +24,9 @@ const greeting = "👋 Hi, I'm Pyline!";
         <strong>Empathy</strong> allows me to understand the customer’s wants
         and give them what they need.<br /><br />
         <strong>Technology</strong>
-        enables me to realize solutions in an efficient and elegant manner.<br /><br /><strong
-          >People</strong
-        >
-        bring it all together because change doesn’t happen alone.
-
+        enables me to realize solutions in an efficient and elegant manner.<br /><br />
+        Collaborating with <strong>people</strong>
+        enables me to deliver great work.
         <br /><br />
       </p>
     </div>
@@ -47,11 +45,11 @@ const greeting = "👋 Hi, I'm Pyline!";
         <h2>Currently..</h2>
         <br />
         <p class="text-body-large"> 
-          💻 Building <a class="button" href="https://www.smalltigergroup.com/">Small Tiger</a> with <a class="button" href="https://www.hellohowareyouhaveaniceday.com/"> Libo Li.</a><br>
-          📈 Contracting @ <a class="button" href="https://www.apple.com/services/">Apple,</a> building tools for Services, Marketing & Ops.<br />
-          🧠 Learning Mandarin and Javascript. <br>
-          🔊 Listening to <a class="button" href="https://www.npr.org/podcasts/510333/throughline">Throughline by NPR. </a><br>
-          📖 Reading <a class="button" href="https://mitpress.mit.edu/9780262533386/">Information & Society.</a><br>
+          📈 Designing @ <a class="button" href="https://denoutdoors.com/">DEN,</a> a modern design and construction start-up.<br />
+          ✏️ Contributing content @ <a class="button" href="https://layer.team/">Layer.</a>
+          🧠 Learning Mandarin. <br>
+          📖 Reading <a class="button" href="http://cup.columbia.edu/book/parks-for-profit/9780231194051">Parks for Profit.</a><br>
+          🏘️ Living <a class ="button" href="https://en.wikipedia.org/wiki/Learning_from_Las_Vegas">and Learning from Las Vegas.</a>
         </p>
     </div>
   </div>
