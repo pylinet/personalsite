@@ -10,7 +10,7 @@ import image3 from "../assets/airtable-interface/airtable-listing-view.jpg";
 const items = {
   title: "Dream Home Finder.",
   companyName: "N/A",
-  companyLink: "",
+  companyLink: "https://www.airtable.com/universe/exp1DT8OewoGa9BE0/dream-home-finder",
   companyAbout:
     "In today’s world, house hunting is a stressful endeavor. Not only do buyers have to deal with people outbidding them, rising interest rates, and a shortage in supply, but they also have to manage all the data associated with a piece of real estate. As first time home buyers, my partner and I needed a solution to manage all of this information in a single place. This is especially helpful if buyers are sourcing leads from multiple marketplaces and owners who don’t have public listings. My goal with this Airtable Base & Interface design is to remove the friction on house hunting data management so that home buyers can spend more time analyzing their options and going on open house visits (the fun part!) \n\nPlaced 3rd for Best Design in Airtable's Interface Contest.",
   companyRole1: "Independent Project Completed Sept 2022",
