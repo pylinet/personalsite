@@ -46,10 +46,10 @@ const greeting = "👋 Hi, I'm Pyline!";
         <br />
         <p class="text-body-large"> 
           📈 Designing @ <a class="button" href="https://denoutdoors.com/">DEN,</a> a modern design and construction start-up.<br />
-          ✏️ Contributing content @ <a class="button" href="https://layer.team/">Layer.</a>
+          ✏️ Contributing content @ <a class="button" href="https://layer.team/">Layer.</a><br>
           🧠 Learning Mandarin. <br>
           📖 Reading <a class="button" href="http://cup.columbia.edu/book/parks-for-profit/9780231194051">Parks for Profit.</a><br>
-          🏘️ Living <a class ="button" href="https://en.wikipedia.org/wiki/Learning_from_Las_Vegas">and Learning from Las Vegas.</a>
+          🏘️ Living and <a class ="button" href="https://en.wikipedia.org/wiki/Learning_from_Las_Vegas"> Learning from Las Vegas.</a>
         </p>
     </div>
   </div>

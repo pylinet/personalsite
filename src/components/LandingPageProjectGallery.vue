@@ -7,7 +7,7 @@ import LandingPageProjectThumbnail from "./LandingPageProjectThumbnail.vue";
 import hanaSlide from "../assets/hana-co-working/hana-windmill-green-united-kingdom-co-working.jpg";
 import cottageSlide from "../assets/cottage-adus/cottage-integrum-los-gatos.jpg";
 import wxySlide from "../assets/wxy-architects/wxy-javits-center-exterior.jpg";
-import shopUber from "../assets/shop-architects/shop-uber-headquarters-model.jpg";
+import shopUber from "../assets/shop-architects/shop-uber-interior.jpg";
 import airtableSlide from "../assets/airtable-interface/airtable-listing-view.jpg";
 
 // List of project objects and their properties.
@@ -28,7 +28,7 @@ const items = {
     name: "AirtablePage",
     slide: airtableSlide,
     alt: "An interface to manage your saved property listings when you search for your new home.",
-    hover: "Dream Home Finder",
+    hover: "Dream Home Finder in Airtable",
   },
   WXY: {
     name: "WXYPage",
