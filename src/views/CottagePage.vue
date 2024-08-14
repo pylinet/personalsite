@@ -6,6 +6,9 @@ import headerImage from "../assets/cottage-adus/cottage-integrum-los-gatos.jpg";
 import image1 from "../assets/cottage-adus/cottage-3D-drawing.png";
 import image2 from "../assets/cottage-adus/cottage-elevations-and-sections.jpg";
 import image3 from "../assets/cottage-adus/cottage-adu-construction.jpg";
+import image4 from "../assets/cottage-adus/Cottage-Airtable Product Roadmap.jpg";
+import image5 from "../assets/cottage-adus/Cottage-Airtable Screenshot.jpg";
+
 
 const items = {
   title: "A start-up reinveting residential design.",
@@ -29,7 +32,13 @@ const items = {
   image3,
   image3Alt: "Photo of an accessory dwelling unit under construction.",
   image3Title: "Photo © Pyline Tangsuvanich.",
-  prevProject: "SHoPPage",
+  image4,
+  image4Alt: "",
+  image4Title: "Photo © Pyline Tangsuvanich.",
+  image5,
+  image5Alt: "",
+  image5Title: "Photo © Pyline Tangsuvanich.",
+  prevProject: "DENPage",
   nextProject: "HanaPage",
 };
 </script>

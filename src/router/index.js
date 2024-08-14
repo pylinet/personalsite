@@ -5,6 +5,7 @@ import CottagePage from "@/views/CottagePage.vue";
 import SHoPPage from "@/views/SHoPPage.vue";
 import WXYPage from "@/views/WXYPage.vue";
 import AirtablePage from "@/views/AirtablePage.vue";
+import DENPage from "../views/DENPage.vue";
 import baseUrl from "../base";
 
 const routes = [
@@ -15,6 +16,7 @@ const routes = [
   { path: baseUrl + "shop", name: "SHoPPage", component: SHoPPage },
   { path: baseUrl + "wxy", name: "WXYPage", component: WXYPage },
   { path: baseUrl + "airtable", name: "AirtablePage", component: AirtablePage },
+  { path: baseUrl + "den", name: "DENPage", component: DENPage}
 ];
 
 const router = createRouter({

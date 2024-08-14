@@ -12,12 +12,18 @@ defineProps([
   "image1",
   "image2",
   "image3",
+  "image4",
+  "image5",
   "image1Alt",
   "image2Alt",
   "image3Alt",
+  "image4Alt",
+  "image5Alt",
   "image1Title",
   "image2Title",
   "image3Title",
+  "image4Title",
+  "image5Title",
   "headerImage",
   "headerImageAlt",
   "headerImageTitle",
@@ -85,6 +91,24 @@ defineProps([
             :src="image3"
             :alt="image3Alt"
             :title="image3Title"
+          />
+        </div>
+        
+        <div class="container">
+          <img
+            class="container-image"
+            :src="image4"
+            :alt="image4Alt"
+            :title="image4Title"
+          />
+        </div>
+        
+        <div class="container">
+          <img
+            class="container-image"
+            :src="image5"
+            :alt="image5Alt"
+            :title="image5Title"
           />
         </div>
       </div>
